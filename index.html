@@ -15,7 +15,8 @@
 <body class=" bg-gray-100">
 
      <!-------Menub bar----->
-    <div class="container mx-auto px-4 sm:px-6 lg:px-6">
+     <section>
+    <div class=" mx-auto px-4 sm:px-6 lg:px-6">
      <div class="relative flex flex-wrap items-center justify-between w-full bg-white py-7 shrink-0">
         <div>
         <img class="h-8"
@@ -31,7 +32,7 @@
         <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Login</button>
         <button class="px-4  py-2 text-sm font-bold text-blue bg-green-500 rounded-x hover:bg-yellow-200">Sign Up</button>
       </div>
-      <!--Mobile Version-->
+      <!--Menu Bar Mobile Version-->
       <button class="md:hidden" id="mobile-menu-toggle">
         <svg xmls="https://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" class="h-6 w-6">   <!--Download proper svg-->
             <path stroke-linecap="round" stroke-linejoin="round" stroke-wdth="4" d="M6 6h16M4 12h16m-7 6h7"></path>
@@ -46,31 +47,34 @@
         <button class="px-4 py-2 text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Login</button>
         <button class="px-4  py-2 text-sm font-bold text-blue bg-green-500 rounded-x hover:bg-yellow-200">Sign Up</button>
       
-    </div>
-     </div> 
+      </div>
+    </div> 
+    <!--Componant 2// Hero and Endorsements-->
+    <section class="grid w-fullgrid-col-1 my-auto mb-12 md:grid-cols-2 xl:gap-14 md:gap-5">
+        <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+            <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">The Clever Place to Keep Your Cache</h1>
+            <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900 ">Cache Bank is designed exclusively for software developers. We understand your financial needs are as unique as the code you write. Our services offer cutting-edge financial solutions that help you take care of your cash.</p>
+            <div class="flex flex-col items-center gap-4 lg:flex-row">
+                <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded:xl bg-green-500 hover:bg-blue-300"> Join Cache Now</button>
+                <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded:xl bg-green-500 hover:bg-blue-300">Join our Discord Server</button>
+            </div>
+        </div>
+        <div class="items-center justify-end hidden col-span-1 md:flex ">
+            <img class="w-4/5 rounded-md" src="https://loopple.s3.eu-west-3.amazonaws.com/images/K2RRaBAGcPxlQaa9EimfM0bQpbOoxxRHlpXAFIh.png" alt="hero img">
+        </div>
+    </section>
+    </section>
+    <!--Endorsement section-->
+    <section class="w-full">
+        <div class="container flex flex-col items-center gap-8 mx-auto my-40">
+            <p class="text-center text-dark-grey-600 font-semibold mb-10 text-2xl">Endorsed by global companies like</p>
 
+            <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between ">
+                    <!--dont forget endorsement icons-->
+            </div>
 
-
-
-
-
-     <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="container mx-auto">
-        <!-- Centered container for more content -->
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    </div>
-
-    <div class="w-full bg-green-500">
-        <!-- Full-width footer container with green background -->
-    </div>
+        </div>
+    </section>
 
     <script>document.getElementById("mobile-menu-toggle")
     .addEventListener(click, function(){
@@ -83,3 +87,23 @@
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/maps.js"></script>
     <script src="./assets/js/loopple/loopple.js"></script>
 </body>
+
+
+
+
+<div class="w-full">
+    <!-- Wide full-width container for additional content -->
+</div>
+<div class="container mx-auto">
+    <!-- Centered container for more content -->
+</div>
+<div class="w-full">
+    <!-- Wide full-width container for additional content -->
+</div>
+<div class="w-full">
+    <!-- Wide full-width container for additional content -->
+</div>
+</div>
+<div class="w-full bg-green-500">
+    <!-- Full-width footer container with green background -->
+</div>
