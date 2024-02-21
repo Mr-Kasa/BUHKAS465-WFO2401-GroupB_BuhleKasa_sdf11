@@ -12,11 +12,49 @@
     <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
 </head>
 
-<body class="null">
-    <div class="container flex flex-col mx-auto">
-        <!-- Main container with navigation and header content -->
+<body class=" bg-gray-100">
+
+     <!-------Menub bar----->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-6">
+     <div class="relative flex flex-wrap items-center justify-between w-full bg-white py-7 shrink-0">
+        <div>
+        <img class="h-8"
+         src="http://loopple.s3.eu-west-3.amazonaws.com/images/6wjH3M3DDKVZrZDViFptLE0oeHnZxEgC3lorweP.png" alt="Logo image">   <!--Test link for effectiveness-->
+       </div>
+       <div class="hidden md:flex items-center justify-between gap-12 text-black ">
+        <a href="#" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Product</a>
+        <a href="#" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Features</a>
+        <a href="#" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Get Started</a>
+        <a href="#" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Contacts</a>
+       </div>
+       <div class="hidden md:flex items-center gap-8">
+        <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Login</button>
+        <button class="px-4  py-2 text-sm font-bold text-blue bg-green-500 rounded-x hover:bg-yellow-200">Sign Up</button>
+      </div>
+      <!--Mobile Version-->
+      <button class="md:hidden" id="mobile-menu-toggle">
+        <svg xmls="https://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" class="h-6 w-6">   <!--Download proper svg-->
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-wdth="4" d="M6 6h16M4 12h16m-7 6h7"></path>
+        </svg>   <!--width and height = 24 on downloaded svg-->
+      </button>
+      <div class="absolute flex flex-col md:hidden items-start shadow-main w-full justify-center gap-3 overflow-hidden bg-white max-h-screen top-full" id="mobile-menu">  <!-- This is hidden for medium screen and above/ on small screen it drops links below buttons-->
+        <a href="#" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Product</a>
+        <a href="#" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Features</a>
+        <a href="#" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Get Started</a>
+        <a href="#" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Contacts</a>
+        
+        <button class="px-4 py-2 text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Login</button>
+        <button class="px-4  py-2 text-sm font-bold text-blue bg-green-500 rounded-x hover:bg-yellow-200">Sign Up</button>
+      
     </div>
-    <div class="w-full">
+     </div> 
+
+
+
+
+
+
+     <div class="w-full">
         <!-- Wide full-width container for additional content -->
     </div>
     <div class="container mx-auto">
@@ -28,9 +66,17 @@
     <div class="w-full">
         <!-- Wide full-width container for additional content -->
     </div>
+    </div>
+
     <div class="w-full bg-green-500">
         <!-- Full-width footer container with green background -->
     </div>
+
+    <script>document.getElementById("mobile-menu-toggle")
+    .addEventListener(click, function(){
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+        </script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
