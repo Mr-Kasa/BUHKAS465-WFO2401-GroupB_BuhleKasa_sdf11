@@ -1,6 +1,6 @@
 ___Links____
-1. Presentation : https://docs.google.com/presentation/d/1pJ0Z-6GSU0CfRu-StVCj0yJJ6sg5Yx9E/edit?usp=sharing&ouid=104004472421332410195&rtpof=true&sd=true
-2. Loom video :
+1. Loom video : https://www.loom.com/share/e6f8e048974c465ea8c8079ee2728822?sid=c74b3c6c-4f7b-4bf6-8c4a-4b4f8af0101b
+2. 2. Presentation : https://docs.google.com/presentation/d/1pJ0Z-6GSU0CfRu-StVCj0yJJ6sg5Yx9E/edit?usp=sharing&ouid=104004472421332410195&rtpof=true&sd=true
 
 
 ______PROJECT_____
